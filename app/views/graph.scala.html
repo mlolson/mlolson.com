@@ -1,0 +1,35 @@
+@()
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>3D Graphing</title>
+
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/graphing.css")">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/three.js/r68/three.js"></script>
+        <script src="@routes.Assets.at("javascripts/vendor/THREE.TrackballControls.js")"></script>
+
+        <script src="@routes.Assets.at("javascripts/graphing.js")" type="text/javascript"></script>
+
+            <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+            <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <textarea id="console"></textarea>
+        <div id="graph-container"></div>
+
+    </body>
+</html>

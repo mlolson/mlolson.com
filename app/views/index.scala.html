@@ -1,0 +1,64 @@
+@(message: String)
+
+@main("Matt Olson") {
+
+    <div class="cover-container row">
+        <div class="inner cover">
+            <h1 class="cover-heading">I'm a web developer</h1>
+            <p class="lead">Here are some projects I've been working on recently:</p>
+        </div>
+    </div>
+
+    <div class="content-container container">
+
+        <div id="tiles-container">
+
+            <div class="tile-item">
+                <a href="https://live.geppetto.org" target="_blank" class="thumbnail">
+                    <h3>Geppetto</h3>
+                    <img src="/assets/images/geppetto-sc-2.png">
+                    <p>Open source biology simulation platform. Learn more at geppetto.org</p>
+                </a>
+            </div>
+
+            <div class="tile-item">
+                <a href="#" class="thumbnail protein-viewer-thumbnail" data-toggle="modal" data-target="#protein-viewer-modal">
+                    <h3>Protein Visualization Tool</h3>
+                    <img src="/assets/images/hemo-preview.png">
+                    <i class="fa fa-2x fa-external-link-square"></i>
+                    <p>View proteins in 3D with WebGL. Uses protein models from the RCSB Protein Data Bank.</p>
+                </a>
+            </div>
+
+            <div class="tile-item">
+                <a href="http://youtube-tile-search.co" target="_blank" class="thumbnail">
+                    <h3>Youtube Instant Search</h3>
+                    <img src="/assets/images/youtube-api.png">
+                    <p>Youtube instant search application using React.js.</p>
+                </a>
+            </div>
+
+            <div class="tile-item">
+                <a href="http://www.openworm.org" target="_blank" class="thumbnail">
+                    <h3>WormSim</h3>
+                    <img src="/assets/images/wormsim.png">
+                    <p>OpenWorm front end application. Our goal is to produce the fisrt computer simulation an entire organsim from the neurological level up, and put it on the web.</p>
+                </a>
+            </div>
+
+            <div class="tile-item">
+                <a href="http://spdru.com/etfed" target="_blank" class="thumbnail">
+                    <h3>ETF Ed</h3>
+                    <img src="/assets/images/etfed.png">
+                    <p>ETF-Ed: Managed learning application for State Street Global Advisors</p>
+                </a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    @proteinmodal()
+
+}
