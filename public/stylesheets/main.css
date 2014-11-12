@@ -312,14 +312,10 @@ a.thumbnail img {
  * Affix and center
  */
 
-@media (min-width: 920px) {
+@media (min-width: 570px) {
 
     #main-header {
         height: 80px;
-    }
-
-    .section .right {
-        float: right;
     }
 
     .masthead-nav {
