@@ -5,9 +5,15 @@ $(function(){
 
     $container.imagesLoaded(function() {
         $container.masonry({
-            columnWidth: 280,
             itemSelector: '.tile-item'
         });
+
+
+        $(window).resize(function () {
+            $container.masonry('reloadItems');
+        }.bind(this));
     });
+
+
 
 });

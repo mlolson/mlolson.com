@@ -83,18 +83,28 @@ body {
     margin-left: 50px;
 }
 
+.tile-item {
+    width:260px;
+    margin-right:20px;
+}
+
 .content-container.container {
     max-width: 880px;
 }
 
 @media (max-width: 992px) {
     .content-container.container {
-        max-width: 600px;
+        width:100%;
     }
+
+    .tile-item {
+        width:100%;
+    }
+
 }
 @media (max-width: 590px) {
-    .content-container.container {
-        max-width: 290px;
+    .tile-item {
+        width:100%;
     }
 }
 
@@ -110,9 +120,7 @@ body {
     background-color: #131813;
     color: #fff;
 }
-.tile-item {
-    width:260px;
-}
+
 img.protein-viewer-thumb {
     height:200px;
 }
